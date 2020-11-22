@@ -3,91 +3,31 @@ namespace ultimaterace
 {
     public class Scoreboard
     {
-        public Scoreboard()
-        {
-        }
-
+        #region Fields
         public int chopperdistancetotraveltowin = 7400;
         public int bikedistancetotraveltowin = 9800;
         public int tesladistancetotraveltowin = 10200;
         public int subdistancetotraveltowin = 11500;
+        #endregion
 
-        private int trckpostion;
-        public int truckposition
+        #region Contructor
+        public Scoreboard()
         {
-            set
-            {
-                trckpostion = value;
-            }
-            get
-            {
-                return trckpostion;
-            }
         }
+        #endregion
 
-        private int chprposition;
-        public int chopperposition
-        {
-            set
-            {
-                chprposition = value;
-            }
-            get
-            {
-                return chprposition;
-            }
-        }
+        #region Properties
+        public int truckposition { get; set; }
 
-        private int bkposition;
-        public int bikeposition
-        {
-            set
-            {
-                bkposition = value;
-            }
-            get
-            {
-                return bkposition;
-            }
-        }
+        public int chopperposition { get; set; }
 
-        private int lwnmower;
-        public int lawnmowerposition
-        {
-            get
-            {
-                return lwnmower;
-            }
-            set
-            {
-                lwnmower = value;
-            }
-        }
+        public int bikeposition { get; set; }
 
-        private int tsla;
-        public int teslapostion
-        {
-            get
-            {
-                return tsla;
-            }
-            set
-            {
-                tsla = value;
-            }
-        }
+        public int lawnmowerposition { get; set; }
 
-        private int sub;
-        public int subposition
-        {
-            get
-            {
-                return sub;
-            }
-            set
-            {
-                sub = value;
-            }
-        }
+        public int teslapostion { get; set; }
+
+        public int subposition { get; set; }
+        #endregion
     }
 }
